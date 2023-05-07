@@ -5,28 +5,65 @@
         <title>Avenir Radio</title>
 
         <style>
+@font-face {
+    font-family: "Format 1452";
+    src: local("Format 1452"),
+    url("Format_1452.woff2") format("woff2");
+}
+
+body {
+    background-color: gainsboro;
+}
+
+iframe, footer, header {
+    margin: 1em;
+}
+
 .flex {
     display: flex;
+}
+
+h1 {
+    font-family: "Format 1452";
+    font-size: 4em;
+}
+
+span.mirror {
+    display: inline-block;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }
 
 footer {
     text-align: center;
 }
 
-iframe, footer {
+header {
+    text-align: center;
+}
+
+#player {
     margin: 1em;
+    background-color: white;;
 }
         </style>
     </head>
 
     <body>
-        <h1>Avenir Radio</h1>
+        <header>
+            <h1>AVENI<span class="mirror">R</span>RADIO</h1>
+        </header>
 
-        <iframe src="https://radio.incongru.org/public/avenir/embed" frameborder="0" allowtransparency="true" style="width: 95%; min-height: 150px; border: 0;"></iframe>
+        <div class="flex" id="player">
+            <iframe src="https://radio.incongru.org/public/avenir/embed" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+        </div>
 
         <div class="flex">
             <iframe style="width: 100%; height: 80vh;" src="https://discutons.incongru.org/channel/Avenir-Radio/?layout=embedded" title="myframe"></iframe>
-            <iframe src="https://radio.incongru.org/public/avenir/schedule/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; border: 0;"></iframe>
+            <iframe src="https://radio.incongru.org/public/avenir/schedule/embed" frameborder="0" allowtransparency="true" style="width: 100%; border: 0;"></iframe>
         </div>
 
         <footer>
