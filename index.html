@@ -31,6 +31,14 @@ iframe, footer, header {
     display: flex;
 }
 
+.shadow {
+    box-shadow: 5px 4px 5px -2px rgba(0,0,0,0.58);
+}
+
+#player img {
+    border: solid 1px black;
+}
+
 h1 {
     font-size: 4em;
     margin-bottom: auto;
@@ -38,10 +46,6 @@ h1 {
 
 span.mirror {
     display: inline-block;
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
 
@@ -55,7 +59,7 @@ header {
 
 #player {
     margin: 1em;
-    background-color: #F0F1F6;
+    background-color: #b4b4b4;
 }
 
 @keyframes rotating {
@@ -89,14 +93,14 @@ header {
             <h2>JINGLE IS MASSIVE</h2>
         </header>
 
-        <div class="flex" id="player">
+        <div class="flex shadow" id="player">
             <img src="BaxterScuba1jpg.jpg" />
             <iframe src="https://radio.incongru.org/public/avenir/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 1;"></iframe>
         </div>
 
         <div class="flex">
-            <iframe style="width: 100%; height: 80vh;" src="https://discutons.incongru.org/channel/Avenir-Radio/?layout=embedded" title="myframe"></iframe>
-            <iframe src="https://radio.incongru.org/public/avenir/schedule/embed?theme=dark" frameborder="0" allowtransparency="true" style="width: 100%; border: 0;"></iframe>
+            <iframe class="shadow" style="width: 100%; height: 80vh;" src="https://discutons.incongru.org/channel/Avenir-Radio/?layout=embedded" title="myframe"></iframe>
+            <iframe class="shadow" src="https://radio.incongru.org/public/avenir/schedule/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; border: 0;"></iframe>
         </div>
 
         <footer>
