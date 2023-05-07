@@ -50,12 +50,34 @@ header {
     margin: 1em;
     background-color: white;;
 }
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    display: inline-block;
+    animation: rotating 2s linear infinite;
+}
+
+.sun {
+    color: yellow;
+}
         </style>
     </head>
 
     <body>
         <header>
-            <h1>AVENI<span class="mirror">R</span> ☼ RADIO</h1>
+            <h1>
+                AVENI<span class="mirror">R</span>
+                <div class="rotating sun">☼</div>
+                RADIO
+            </h1>
             <h2>JINGLE IS MASSIVE</h2>
         </header>
 
