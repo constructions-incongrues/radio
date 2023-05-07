@@ -4,6 +4,11 @@
         <meta charset="utf-8">
         <title>Avenir Radio - Jingle is massive !</title>
 
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
         <style>
 @font-face {
     font-family: "Format 1452";
@@ -12,7 +17,7 @@
 }
 
 body {
-    background-color: yellow;
+    background-color: #FFFF00;
     font-family: "Format 1452";
 }
 
@@ -48,7 +53,7 @@ header {
 
 #player {
     margin: 1em;
-    background-color: white;;
+    background-color: #F0F1F6;
 }
 
 @keyframes rotating {
@@ -84,12 +89,12 @@ header {
 
         <div class="flex" id="player">
             <img src="BaxterScuba1jpg.jpg" />
-            <iframe src="https://radio.incongru.org/public/avenir/embed" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+            <iframe src="https://radio.incongru.org/public/avenir/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 1;"></iframe>
         </div>
 
         <div class="flex">
             <iframe style="width: 100%; height: 80vh;" src="https://discutons.incongru.org/channel/Avenir-Radio/?layout=embedded" title="myframe"></iframe>
-            <iframe src="https://radio.incongru.org/public/avenir/schedule/embed" frameborder="0" allowtransparency="true" style="width: 100%; border: 0;"></iframe>
+            <iframe src="https://radio.incongru.org/public/avenir/schedule/embed?theme=dark" frameborder="0" allowtransparency="true" style="width: 100%; border: 0;"></iframe>
         </div>
 
         <footer>
